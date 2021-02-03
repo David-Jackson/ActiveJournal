@@ -2,6 +2,8 @@
 
 Active Journal is the easiest way of recording detail routes of your activities. Whether it's running, walking, biking, hiking, driving, even sailing and boating, this app enables effortless journaling with the ability to add text and image entries.
 
+You can find a link to the [Figma UI design here](https://www.figma.com/file/GrHiuIndzoUBFFH2jOH0GG0H/ActiveJournal).
+
 Here is the design concept side-by-side with the end result:
 
 | Design | Build |
