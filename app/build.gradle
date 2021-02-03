@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'udacityTestKey'
+            keyPassword 'password'
+            storeFile file("$rootProject.projectDir/keystore.jks")
+            storePassword 'password'
+        }
+    }
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "fyi.jackson.activejournal"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 2
+        versionName "1.01"
+        vectorDrawables.useSupportLibrary true
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/proguard/androidx-annotations.pro'
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.appstoreconfig
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:support-compat:28.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    // Butterknife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    // Room components
+    implementation "android.arch.persistence.room:runtime:$rootProject.roomVersion"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    annotationProcessor "android.arch.persistence.room:compiler:$rootProject.roomVersion"
+    // ViewModel + LiveData components
+    implementation "android.arch.lifecycle:extensions:$rootProject.lifecycleVersion"
+    annotationProcessor "android.arch.lifecycle:compiler:$rootProject.lifecycleVersion"
+    // Google Maps
+    implementation 'com.google.android.gms:play-services-maps:16.0.0'
+    implementation 'com.google.maps.android:android-maps-utils:0.5'
+    // Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    // Firebase Analytics
+    implementation 'com.google.firebase:firebase-core:16.0.4'
+    // EasyPermissions
+    implementation 'pub.devrel:easypermissions:2.0.0'
+}
+
+apply plugin: 'com.google.gms.google-services'

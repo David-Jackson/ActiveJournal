@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Active Journal</string>
+    <string name="title_activity_main">@string/app_name</string>
+    <string name="bottom_sheet_recording_label">Recording…</string>
+    <string name="activity_title_placeholder">Activity Title</string>
+    <string name="recording_notification_content_title">Recording Activity</string>
+    <string name="recording_notification_content_text">Content Text</string>
+    <string name="recording_notification_action_stop">Stop Recording</string>
+    <string name="channel_name">Recording Channel</string>
+    <string name="channel_description">This channel is for the foreground notification shown while recording activities.</string>
+    <string name="no_activities_title">No Recorded Activities</string>
+    <string name="content_save">Save</string>
+    <string name="add_image">Add Image</string>
+    <string name="add_text">Add Text</string>
+    <string name="edit_content">Edit</string>
+
+    <!-- OPTIONS MENU -->
+    <string name="menu_title_import">Import Activity</string>
+    <string name="menu_title_settings">Settings</string>
+    <string name="menu_title_set_type">Set Activity Type</string>
+    <string name="menu_title_rename">Rename</string>
+    <string name="menu_title_delete">Delete</string>
+    <string name="menu_title_add_sample_data">Add Sample Activities</string>
+    <string name="widget_recording_name">Recording Shortcut</string>
+    <string name="widget_display_name">Activity List</string>
+    <string name="access_fab">Start Recording New Activity</string>
+    <string name="access_pause">Pause Recording</string>
+    <string name="access_stop">Stop Recording and Save Activity</string>
+    <string name="access_play">Resume Recording</string>
+    <string name="access_activity_type">Activity Type: %s</string>
+    <string name="access_widget_recording_start">Active Journal widget: Start recording new activity</string>
+    <string name="access_map">Detail Map View</string>
+    <string name="access_type_content">Type to add content...</string>
+    <string name="point_count">%d</string>
+    <string name="sample_activity_long_text">This is a very long string that explains my recent activity in great detail. It was so great. I had so much fun. Here\'s some Lorem Ipsum: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tincidunt quam, eu hendrerit mauris blandit vitae. Donec eu laoreet nulla. Cras facilisis tempor eros vel eleifend. Curabitur eros mi, volutpat eget urna in, efficitur tempus leo. Duis non efficitur felis, id posuere magna. Nullam ultrices nisi ac nisi venenatis laoreet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In hac habitasse platea dictumst. Morbi accumsan volutpat dui eget consectetur.</string>
+    <string name="sample_activity_short_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tincidunt quam, eu hendrerit mauris blandit vitae. Donec eu laoreet nulla. Cras facilisis tempor eros vel eleifend.</string>
+</resources>
